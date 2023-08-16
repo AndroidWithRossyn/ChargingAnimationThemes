@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    tools:context=".fragment.DownloadWallpaperFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/download_wallpaper_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            android:layout_above="@+id/small"
+            android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:id="@+id/small"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <include layout="@layout/small_native_container" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

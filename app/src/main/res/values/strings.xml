@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">3D Battery Charging Animation</string>
+    <string name="second_string">Get informed about your battery’s health with our app’s informative statistics and tips.</string>
+    <string name="first_string">Spice up your phone with fun animated battery visuals.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="live_wallpaper">Live wallpaper</string>
+    <string name="live_charger">Battery Theme</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="tmc_part_1">The application is notifying you to the presence of an app that provides several services that are essential information for safer and more efficient use. \n</string>
+    <string name="tmc_text_1">By pressing the Accept button, I declare I have read and accepted the following condition of use.</string>
+    <string name="tmc_text_2">If we find the app is being used outside its terms of use, we may restrict access to it.</string>
+    <string name="tmc_text_3">Any type of modification to the app or its components is not allowed.</string>
+    <string name="tmc_text_4">Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here.</string>
+    <string name="tmc_text_5">We do not share any kind of your Personal Data with third parties.</string>
+    <string name="following_link">Following link :\t</string>
+    <string name="privacy_hyper"><b><u>Privacy Policy</u></b></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="tmc_hyper"><b><u>Terms and Condition</u></b></string>
+    <string name="terms_and_condition">Terms and Condition</string>
+
+
+</resources>

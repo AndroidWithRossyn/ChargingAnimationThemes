@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.CategoryShowVideoActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/small"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:src="@drawable/back_btn"
+                        android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/item_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_above="@+id/set_wallpaper"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/iten_background">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardView.Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#33080640"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:id="@+id/gifimageView"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:scaleType="fitXY" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/set_wallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/next_onboard"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="12dp"
+                android:text="Set Wallpaper"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/small"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <include layout="@layout/small_native_container" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

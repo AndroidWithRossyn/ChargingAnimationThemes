@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Thumb when the switch is in the "OFF" state -->
+    <item android:drawable="@drawable/switch_thumb_off" android:state_checked="false" />
+    <!-- Thumb when the switch is in the "ON" state -->
+    <item android:drawable="@drawable/switch_thumb_on" android:state_checked="true" />
+    <!-- Default thumb -->
+    <item android:drawable="@drawable/switch_thumb_off" />
+</selector>

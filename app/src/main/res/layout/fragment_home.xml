@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/iten_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Start Charging Animation"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/serviceSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/new_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="New"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/new_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/new_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/large1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="12dp"
+                        android:visibility="gone">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/popular_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Popular"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/popular_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/popular_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scrollbars="vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/faces_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Faces"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/faces_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/faces_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/large2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="12dp"
+                        android:visibility="gone">></androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/battery_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Battery"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/battery_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/battery_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/abstract_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Abstract"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/abstract_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/abstract_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/large3"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="12dp"
+                        android:visibility="gone">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/funny_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Funny"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/funny_see"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/right_arrow"
+                            android:drawablePadding="5dp"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/funny_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</layout>

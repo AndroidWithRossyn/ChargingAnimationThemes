@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favourites"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabTextColor="#80FFFFFF"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingStart="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/next_onboard"
+        app:tabPaddingEnd="10dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/tabBarStyle" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/tabs"/>
+
+</RelativeLayout>

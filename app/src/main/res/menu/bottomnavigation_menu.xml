@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNav"
+        android:icon="@drawable/home_checked"
+        android:orderInCategory="1"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/batteryNav"
+        android:icon="@drawable/battery_checked"
+        android:orderInCategory="2"
+        android:title="Battery Info" />
+    <item
+        android:id="@+id/wallpaperNav"
+        android:icon="@drawable/wallpaper_checked"
+        android:orderInCategory="3"
+        android:title="Wallpaper" />
+    <item
+        android:id="@+id/downloadNav"
+        android:icon="@drawable/download_checked"
+        android:orderInCategory="3"
+        android:title="Download" />
+
+
+</menu>
+
+
